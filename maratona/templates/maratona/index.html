@@ -18,7 +18,11 @@
                         {% for aula in latest_aulas_list %}
 
                             <article class="col-12 col-lg-6">
-                                <a href="{% url 'maratona:detail' aula.id %}" class="box {{ aula.video_url|yesno:'activate,disabled' }}">
+                                {% if aula.video_url %}
+                                    <a href="{% url 'maratona:detail' aula.id %}" class="box activate">
+                                {% else %}
+                                    <a class="box disabled">
+                                {% endif %}
                                     <div class="content">
                                         <img src="{{ aula.image_url }}"
                                              alt="{{ aula.title }}" class="img-fluid">
