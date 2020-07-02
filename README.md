@@ -12,8 +12,8 @@ Para entregar o desafio, gere uma imagem docker, faça o push para sua conta do 
 Antes de submeter o desafio, teste se tudo está funcionando executando o comando:  
 docker run -p 8000:8000 uilton/maratonafc3_django  
 
-Página administrativa: http://127.0.0.1/admin
-Listagem de aulas: http://127.0.0.1/maratona
+Página administrativa: http://127.0.0.1/admin  
+Listagem de aulas: http://127.0.0.1/maratona  
 
 Usuário: root  
 Senha: root
