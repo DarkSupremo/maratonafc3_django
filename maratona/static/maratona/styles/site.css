@@ -11699,6 +11699,10 @@ iframe {
     padding: 0 5px
 }
 
+.page .container-page .menu .list-items .item-menu.disabled {
+    opacity: .3;
+}
+
 @media only screen and (min-width: 768px) {
     .page .container-page .menu .list-items .item-menu {
         height: 80px
@@ -11715,7 +11719,7 @@ iframe {
     }
 }
 
-.page .container-page .menu .list-items .item-menu.active, .page .container-page .menu .list-items .item-menu:active, .page .container-page .menu .list-items .item-menu:focus, .page .container-page .menu .list-items .item-menu:hover {
+.page .container-page .menu .list-items .item-menu.active, .page .container-page .menu .list-items .item-menu:active:not(.disabled), .page .container-page .menu .list-items .item-menu:focus, .page .container-page .menu .list-items .item-menu:hover:not(.disabled) {
     background-color: #272727;
     color: #ffcd01
 }
